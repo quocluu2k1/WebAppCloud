@@ -1,0 +1,68 @@
+*{
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin-left: 25%;
+    margin-top: 50px;
+}
+
+.container>div{
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+}
+.container>div>span{
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    width: 270px;
+    padding-right: 15px;
+}
+.container>div>input{
+    width: 250px;
+    float: left;
+    height: 26px;
+    font-size: 16px;
+    border: 1px solid #99a2aa;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+.container>div>input:focus, .container>div>select:focus{
+    outline: none;
+    border-color: #0168fa;
+}
+.container>div>select{
+    height: 28px;
+    width: 260px;
+    font-size: 15px;
+    border: 1px solid #99a2aa;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.container>div>button{
+    margin-left: 220px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+    background-color: #16a34a;
+}
+.container>div>button:active{
+    opacity: 0.8;
+}
+

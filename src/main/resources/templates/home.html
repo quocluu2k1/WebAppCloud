@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <span>Số tuổi:</span>
+            <input id="STDNT_AGE" type="number" value="0" />
+        </div>
+        <div>
+            <span>Giới tính:</span>
+            <select id="STDNT_GENDER">
+                <option value="M">Nam</option>
+                <option value="F">Nữ</option>
+                <option value="O">Khác</option>
+            </select>
+        </div>
+        <div>
+            <span>Nền tảng của sinh viên:</span>
+            <select id="STDNT_BACKGROUND">
+                <option value="BGD 1">BGD 1</option>
+                <option value="BGD 2">BGD 2</option>
+                <option value="BGD 3">BGD 3</option>
+                <option value="BGD 4">BGD 4</option>
+                <option value="BGD 5">BGD 5</option>
+                <option value="BGD 6">BGD 6</option>
+                <option value="BGD 7">BGD 7</option>
+                <option value="BGD 8">BGD 8</option>
+                <option value="Other">Khác</option>
+            </select>
+        </div>
+        <div>
+            <span>Nơi ở và trường học có cùng bang, quận/huyện hay không?:</span>
+            <select id="IN_STATE_FLAG">
+                <option value="Y">Có</option>
+                <option value="N">Không</option>
+            </select>
+        </div>
+        <div>
+            <span>Sinh viên có phải là người nước ngoài hay không?:</span>
+            <select id="INTERNATIONAL_STS">
+                <option value="N">Không</option>
+                <option value="Y">Là người nước ngoài</option>
+            </select>
+        </div>
+        <div>
+            <span>Ngành sinh viên theo học:</span>
+            <select id="STDNT_MAJOR">
+                <option value="Mathematics">Toán học</option>
+                <option value="Art">Mỹ thuật</option>
+                <option value="Political Science">Khoa học chính trị</option>
+                <option value="Biology">Sinh học</option>
+                <option value="Accounting">Kế toán</option>
+                <option value="Criminal Justice">Công lý hình sự</option>
+                <option value="Psychology">Tâm lý học</option>
+                <option value="Theatre Arts">Nghệ thuật sân khấu</option>
+                <option value="Nursing">Chăm sóc y tế</option>
+                <option value="Pre-Nursing">Tiên y</option>
+                <option value="Chemistry">Hóa học</option>
+                <option value="Pre-Engineering/RETP">Tiền kỹ thuật/Chương trình Đào tạo Kỹ thuật và Khoa học Môi trường</option>
+                <option value="Early Childhood Education">Giáo dục Mầm non</option>
+                <option value="Music Performance">Biểu diễn âm nhạc</option>
+                <option value="English Language/Literature">Tiếng Anh/Ngôn ngữ và Văn học Anh</option>
+                <option value="Joint Enrollment - Accel">Ghi danh chung - Accel</option>
+                <option value="History and Secondary Ed">Lịch sử và Giáo dục Trung học</option>
+                <option value="History">Lịch sử</option>
+                <option value="Engineering Studies">Nghiên cứu Kỹ thuật</option>
+                <option value="Computer Science - Systems">Khoa học Máy tính - Hệ thống</option>
+                <option value="Pre-Business">Tiền kinh doanh</option>
+                <option value="Management">Quản lý</option>
+                <option value="Theatre Education">Giáo dục nghệ thuật sân khấu</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Communication">Truyền thông</option>
+                <option value="Music Education">Giáo dục âm nhạc</option>
+                <option value="French with Teacher Cert">Tiếng Pháp với chứng chỉ Giảng dạy</option>
+                <option value="English and Secondary Ed">Tiếng Anh và Giáo dục Trung học</option>
+                <option value="Exercise Science">Khoa học Vận động</option>
+                <option value="General Business">Kinh doanh chung</option>
+                <option value="Mathematics and Secondary Ed">Toán học và Giáo dục Trung học</option>
+                <option value="Finance">Tài chính</option>
+                <option value="French">Tiếng Pháp</option>
+                <option value="Health Science">Khoa học Sức khỏe</option>
+                <option value="Spec Ed: Gen. Curr. - Reading">Giáo dục Đặc biệt: Chương trình Giáo dục chung - Đọc hiểu</option>
+                <option value="Music">Âm nhạc</option>
+                <option value="Middle Grades Education">Giáo dục Trung học cơ sở</option>
+                <option value="Geology">Địa chất học</option>
+                <option value="Management Information Systems">Hệ thống Thông tin Quản lý</option>
+                <option value="Art Education">Giáo dục Mỹ thuật</option>
+                <option value="Applied Computer Science">Khoa học Máy tính Ứng dụng</option>
+                <option value="Information Technology">Công nghệ Thông tin</option>
+                <option value="Sociology">Xã hội học</option>
+                <option value="Computer Science - Games">Khoa học Máy tính - Trò chơi</option>
+                <option value="Spanish">Tiếng Tây Ban Nha</option>
+                <option value="General Studies/AS">Nghiên cứu chung/Trung học cơ sở</option>
+                <option value="Biology and Secondary Ed">Sinh học và Giáo dục Trung học</option>
+                <option value="Chemistry and Secondary Ed">Hóa học và Giáo dục Trung học</option>
+                <option value="Health and Physical Education">Giáo dục Sức khỏe và Thể dục</option>
+                <option value="Liberal Arts">Nghệ thuật Tự do</option>
+                <option value="Spanish with Teacher Cert">Tiếng Tây Ban Nha với chứng chỉ Giảng dạy</option>
+                <option value="Earth and Space Science">Khoa học Trái đất và Vũ trụ</option>
+                <option value="Early Admission - Accel">Ghi danh sớm - Accel</option>
+                <option value="Undeclared">Khác</option>
+            </select>
+        </div>
+        <div>
+            <span>Điểm đầu vào của sinh viên (gồm cả đầu vào 1 và 2):</span>
+            <input id="STDNT_TEST_ENTRANCE_COMB" type="number" value="0" />
+        </div>
+        <div>
+            <span>Học kỳ đầu tiên:</span>
+            <input id="FIRST_TERM" type="number" value="0" />
+        </div>
+        <div>
+            <span>Sinh viên có ở ký túc xá của trường hay không?:</span>
+            <select id="HOUSING_STS">
+                <option value="On Campus">Có</option>
+                <option value="Off Campus">Không</option>
+            </select>
+        </div>
+        <div>
+            <span>Khoảng cách từ trường đại học đến nhà của sinh viên:</span>
+            <input id="DISTANCE_FROM_HOME" type="number" value="0" />
+        </div>
+        <div>
+            <span>Điểm trung bình THPT:</span>
+            <input id="HIGH_SCHL_GPA" type="number" value="0" />
+        </div>
+        <div>
+            <span>Tên trường THPT:</span>
+            <input id="HIGH_SCHL_NAME" type="text" value="SCHOOL " />
+        </div>
+        <div>
+            <span>Trình độ học vấn của bố:</span>
+            <select id="FATHER_HI_EDU_DESC">
+                <option value="No Information">Không có thông tin</option>
+                <option value="College/Beyond">Đại học/ Sau đại học</option>
+                <option value="High School">Trung học</option>
+                <option value="Middle School/Junior High">Trung học cơ sở</option>
+                <option value="Other/Unknown">Khác/Không rõ</option>
+            </select>
+        </div>
+        <div>
+            <span>Trình độ học vấn của mẹ:</span>
+            <select id="MOTHER_HI_EDU_DESC">
+                <option value="No Information">Không có thông tin</option>
+                <option value="College/Beyond">Đại học/ Sau đại học</option>
+                <option value="High School">Trung học</option>
+                <option value="Middle School/Junior High">Trung học cơ sở</option>
+                <option value="Other/Unknown">Khác/Không rõ</option>
+            </select>
+        </div>
+        <div>
+            <span>Loại bằng cấp mà sinh viên đã đăng ký vào trường đại học:</span>
+            <select id="DEGREE_GROUP_DESC">
+                <option value="Bachelors">Cử nhân</option>
+                <option value="Associate">Cử nhân liên kết</option>
+                <option value="Career Associate">Cử nhân liên kết nghề nghiệp</option>
+            </select>
+        </div>
+        <div>
+            <span>Số tín chỉ sau kỳ học đầu tiên:</span>
+            <input id="FIRST_TERM_ATTEMPT_HRS" type="number" value="0" />
+        </div>
+        <div>
+            <span>Số tín chỉ của kỳ thứ hai:</span>
+            <input id="SECOND_TERM_ATTEMPT_HRS" type="number" value="0" />
+        </div>
+        <div>
+            <span>Học phí:</span>
+            <input id="COST_OF_ATTEND" type="number" value="0" />
+        </div>
+        <div>
+            <span>Mức đóng góp dự kiến của gia đình cho học phí:</span>
+            <input id="EST_FAM_CONTRIBUTION" type="number" value="0" />
+        </div>
+        <div>
+            <span>Nhu cầu tài chính chưa đáp ứng của sinh viên:</span>
+            <input id="UNMET_NEED" type="number" value="0" />
+        </div>
+        <div>
+            <span>Số tín chỉ còn nợ sau kỳ học đầu tiên:</span>
+            <input id="First_term_backlog_hrs" type="number" value="0" />
+        </div>
+        <div>
+            <span>Số tín chỉ còn nợ của học kỳ thứ hai:</span>
+            <input id="Second_term_backlog_hrs" type="number" value="0" />
+        </div>
+        <div>
+            <span>Số môn học đã đăng ký của học kỳ 1:</span>
+            <input id="No_sub_first_term" type="number" value="0" />
+        </div>
+        <div>
+            <span>Số môn học đã đăng ký của học kỳ 2:</span>
+            <input id="No_sub_second_term" type="number" value="0" />
+        </div>
+        <div>
+            <button id="submit">Gửi</button>
+        </div>
+    </div>
+    <div style="text-align: center;margin-bottom: 80px;">
+        <h2 id="result"></h2>
+    </div>
+</body>
+<script type="text/javascript" th:src="@{/js/script.js}"></script>
+</html>
